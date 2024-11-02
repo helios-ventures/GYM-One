@@ -15,11 +15,11 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
--- Adatbázis struktúra mentése a gymone.
-CREATE DATABASE IF NOT EXISTS `gymone` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
-USE `gymone`;
+-- Adatbázis struktúra mentése a gym_one.
+CREATE DATABASE IF NOT EXISTS `gym_one` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
+USE `gym_one`;
 
--- Struktúra mentése tábla gymone. current_tickets
+-- Struktúra mentése tábla gym_one. current_tickets
 CREATE TABLE IF NOT EXISTS `current_tickets` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `userid` bigint(20) NOT NULL DEFAULT 0,
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `current_tickets` (
 
 -- Az adatok exportálása nem lett kiválasztva.
 
--- Struktúra mentése tábla gymone. invoices
+-- Struktúra mentése tábla gym_one. invoices
 CREATE TABLE IF NOT EXISTS `invoices` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `userid` bigint(20) NOT NULL DEFAULT 0,
@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `invoices` (
 
 -- Az adatok exportálása nem lett kiválasztva.
 
--- Struktúra mentése tábla gymone. lockers
+-- Struktúra mentése tábla gym_one. lockers
 CREATE TABLE IF NOT EXISTS `lockers` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `lockernum` int(11) NOT NULL,
@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS `lockers` (
 
 -- Az adatok exportálása nem lett kiválasztva.
 
--- Struktúra mentése tábla gymone. logs
+-- Struktúra mentése tábla gym_one. logs
 CREATE TABLE IF NOT EXISTS `logs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `userid` bigint(20) DEFAULT NULL,
@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS `logs` (
 
 -- Az adatok exportálása nem lett kiválasztva.
 
--- Struktúra mentése tábla gymone. opening_hours
+-- Struktúra mentése tábla gym_one. opening_hours
 CREATE TABLE IF NOT EXISTS `opening_hours` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `day_of_week` int(11) NOT NULL,
@@ -80,7 +80,7 @@ CREATE TABLE IF NOT EXISTS `opening_hours` (
 
 -- Az adatok exportálása nem lett kiválasztva.
 
--- Struktúra mentése tábla gymone. temp_dailyworkout
+-- Struktúra mentése tábla gym_one. temp_dailyworkout
 CREATE TABLE IF NOT EXISTS `temp_dailyworkout` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `start_time` time NOT NULL,
@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `temp_dailyworkout` (
 
 -- Az adatok exportálása nem lett kiválasztva.
 
--- Struktúra mentése tábla gymone. temp_loggeduser
+-- Struktúra mentése tábla gym_one. temp_loggeduser
 CREATE TABLE IF NOT EXISTS `temp_loggeduser` (
   `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `userid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
@@ -101,7 +101,7 @@ CREATE TABLE IF NOT EXISTS `temp_loggeduser` (
 
 -- Az adatok exportálása nem lett kiválasztva.
 
--- Struktúra mentése tábla gymone. tickets
+-- Struktúra mentése tábla gym_one. tickets
 CREATE TABLE IF NOT EXISTS `tickets` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
@@ -113,7 +113,7 @@ CREATE TABLE IF NOT EXISTS `tickets` (
 
 -- Az adatok exportálása nem lett kiválasztva.
 
--- Struktúra mentése tábla gymone. timetable
+-- Struktúra mentése tábla gym_one. timetable
 CREATE TABLE IF NOT EXISTS `timetable` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `event_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
@@ -127,7 +127,7 @@ CREATE TABLE IF NOT EXISTS `timetable` (
 
 -- Az adatok exportálása nem lett kiválasztva.
 
--- Struktúra mentése tábla gymone. trainers
+-- Struktúra mentése tábla gym_one. trainers
 CREATE TABLE IF NOT EXISTS `trainers` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
@@ -141,7 +141,7 @@ CREATE TABLE IF NOT EXISTS `trainers` (
 
 -- Az adatok exportálása nem lett kiválasztva.
 
--- Struktúra mentése tábla gymone. users
+-- Struktúra mentése tábla gym_one. users
 CREATE TABLE IF NOT EXISTS `users` (
   `userid` int(10) unsigned NOT NULL,
   `firstname` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
@@ -163,7 +163,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 -- Az adatok exportálása nem lett kiválasztva.
 
--- Struktúra mentése tábla gymone. workers
+-- Struktúra mentése tábla gym_one. workers
 CREATE TABLE IF NOT EXISTS `workers` (
   `userid` bigint(20) NOT NULL,
   `firstname` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
